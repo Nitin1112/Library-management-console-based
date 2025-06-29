@@ -21,4 +21,10 @@ public class BookModel{
     public String getPublication(){
         return publication_date;
     }
+
+    
+    @Override
+    public String toString(){
+        return "Title: "+title+"\nAuthor: "+author+"\nPublication Date: "+publication_date;
+    }
 }

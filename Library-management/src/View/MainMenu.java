@@ -4,13 +4,15 @@ public class MainMenu {
     public void display(){
         Scanner sc=new Scanner(System.in);
         while(true){
+            System.out.println();
             System.out.println("1. Book");
             System.out.println("2. User");
             System.out.println("3. Lend");
             System.out.println("4. History");
             System.out.println("5. Exit");
-
+            System.out.print("Enter an option: ");
             int n=sc.nextInt();
+
             switch(n){
                 case 1:
                     BookMenu book=new BookMenu();
